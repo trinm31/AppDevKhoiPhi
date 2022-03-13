@@ -7,8 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using AppDev.Models;
 
-namespace AppDev.Controllers
+namespace AppDev.Areas.Unauthenticated.Controllers
 {
+    [Area("Unauthenticated")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
